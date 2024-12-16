@@ -3,10 +3,15 @@ export interface DisplayDataItem {
   solMint?: string;
 }
 
+export interface QuoteData {
+  price: number;
+  amount: number;
+  source: string;
+  timestamp: number;
+}
+
 export interface QuoteResponse {
-  // Define the expected structure of the response here
-  // Adjust based on the actual API response
-  data: any; // Replace `any` with the specific type if known
+  data: QuoteData;
 }
 
 export interface SerializedQuoteResponse {
